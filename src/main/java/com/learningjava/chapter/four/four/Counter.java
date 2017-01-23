@@ -5,16 +5,20 @@ package com.learningjava.chapter.four.four;
  */
 public class Counter {
     private static int count;
+
     static {
         count = 1;
     }
-    public Counter(){
+
+    public Counter() {
         count++;
     }
-    public static void printCount(){
-        System.out.println("Number of instances = "+count);
+
+    public static void printCount() {
+        System.out.println("Number of instances = " + count);
     }
-    public static void main(String [] args){
+
+    public static void main(String[] args) {
         Counter anInstance = new Counter();
         Counter.printCount();
         Counter anotherInstance = new Counter();
