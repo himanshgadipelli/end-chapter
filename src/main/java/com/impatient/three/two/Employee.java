@@ -1,8 +1,6 @@
 package com.impatient.three.two;
 
-/**
- * Created by bobby on 1/25/2017.
- */
+
 public class Employee implements Person, Identified {
     private String name;
     private double salary;
