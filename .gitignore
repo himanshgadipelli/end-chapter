@@ -5,3 +5,5 @@ src/main/resources/
 src/test/
 target/
 *.class
+output1.txt
+output.txt
