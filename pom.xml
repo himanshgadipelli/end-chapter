@@ -17,6 +17,13 @@
         </plugins>
     </build>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.3.6.RELEASE</version>
+        </dependency>
+    </dependencies>
     <groupId>com.text.oracle</groupId>
     <artifactId>codepractice</artifactId>
     <version>1.0</version>

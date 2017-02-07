@@ -1,0 +1,34 @@
+package com.impatient.four.two;
+
+import java.util.ArrayList;
+
+/**
+ * Created by bobby on 1/29/2017.
+ */
+public final class Message {
+    private String sender;
+    private ArrayList<String> recipients;
+    private String text;
+
+    public Message(String sender, String text){
+        this.sender = sender;
+        this.text = text;
+        recipients = new ArrayList<>();
+    }
+
+    public void addRecipient(String recipient){
+        recipients.add(recipient);
+    };
+
+    public Message clone(){
+        try{
+            Message cloned = (Message) super.clone();
+            @SuppressWarnings("unchecked") ArrayList<String> clonedRecipients
+                    = (ArrayList<String>) recipients.clone();
+            cloned.recipients = clonedRecipients;
+            return cloned;
+        }catch(CloneNotSupportedException ex){
+            return null;
+        }
+    }
+}

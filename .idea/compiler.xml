@@ -11,6 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="codepractice" target="1.8" />
+      <module name="spring" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
